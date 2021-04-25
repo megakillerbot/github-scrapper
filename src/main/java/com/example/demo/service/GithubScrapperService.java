@@ -6,6 +6,7 @@ import com.example.demo.util.DTOUtil;
 import com.example.demo.util.RestUtil;
 import com.example.demo.util.ScrapperUtils;
 import com.example.demo.vo.CacheRepositoriesVO;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -17,6 +18,7 @@ import java.util.*;
 import static org.springframework.util.StringUtils.isEmpty;
 
 @Service
+@Slf4j
 public class GithubScrapperService {
 
     private static final String GITHUB = "https://github.com";
@@ -37,7 +39,7 @@ public class GithubScrapperService {
         try {
             return DTOUtil.toJson(groupedFiles);
         } catch (IOException e) {
-            e.printStackTrace();
+            log.error("An error has occurred while converting the response. {}", e.getMessage());
             return "";
         }
     }

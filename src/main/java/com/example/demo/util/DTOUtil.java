@@ -15,7 +15,7 @@ public class DTOUtil implements Serializable {
         }
     }
 
-    static Object fromJson(String json, Class<?> classe) throws IOException {
+    public static Object fromJson(String json, Class<?> classe) throws IOException {
         try {
             return new ObjectMapper().readValue(json, classe);
         } catch (IOException e) {
