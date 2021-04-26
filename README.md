@@ -54,3 +54,9 @@ Auto Deploy of the master branch is enabled through configuration on [Heroku](ht
 ### Java Spring template project
 
 This project is based on a GitLab [Project Template](https://docs.gitlab.com/ee/gitlab-basics/create-project.html).
+
+### Future Improvements
+* Performance improvements on requests and processing
+* Auto cache invalidation based on Last Commit info
+* Visibility for repositories already stored
+* Data persistence
