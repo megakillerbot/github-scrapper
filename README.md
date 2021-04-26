@@ -20,7 +20,7 @@ This API returns the file count, the total number of lines and the total number 
 ```
 
 ### How to use it
-In order to make a basic request to the API, all you need is POST request to the root path of the application, with a payload such as the following:
+In order to make a basic request to the API, all you need is a *POST* request to the root path of the application, with a payload such as the following:
 ```
 {
 	"repository": "${GITHUB_REPO_NAME}"
@@ -33,6 +33,8 @@ The duration of the first request might take a while, depending on the size and 
         "refresh": "true"
 }
 ```
+### Example
+![image](https://user-images.githubusercontent.com/5722755/116141880-a56ffe80-a6af-11eb-87bc-70b758e6348e.png)
 
 ### Docker Image
 This repository contains a Dockerfile through which it is possible to generate a docker image for the API.
