@@ -60,5 +60,6 @@ This project is based on a GitLab [Project Template](https://docs.gitlab.com/ee/
 ### Future Improvements
 * Performance improvements on requests and processing
 * Auto cache invalidation based on Last Commit info
+* Repository validation at request
 * Visibility for repositories already stored
 * Data persistence
